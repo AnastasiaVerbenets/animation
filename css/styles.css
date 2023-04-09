@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+.box {
+    display: inline-block;
+    margin: 0 40px 20px 0;
+    /* background: rgba(228, 225, 228, .5); */
+}
+
+div {
+    width: 200px;
+    height: 150px;
+    border-radius: 7px;
+    line-height: 100px;
+    margin: 0 auto;
+    transition: all 1s linear;
+}
+
+/* transition */
+
+.one {
+    background-color: rgb(173, 103, 173);
+    transition-property: background-color;
+    transition-duration: 2000ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 300ms;
+}
+
+.one:hover {
+    background-color: rgb(83, 9, 83);
+}
+
+.two {
+    background-color: rgb(203, 12, 79);
+    transition: background-color 1500ms linear ;
+
+}
+
+.two:hover {
+    background-color: rgb(63, 36, 182);
+}
+
+/* transform */
+
+.three {
+    background-color: rgb(68, 133, 211);
+}
+
+.three:hover {
+    background-color: rgb(26, 69, 122);
+    transform: translateX(-500px);
+}
+
+.four {
+    background-color: rgb(116, 214, 120);
+}
+
+.four:hover {
+    background-color: rgb(49, 95, 50);
+    transform: translate(70px, 40px);
+}
+
+/* animation */
+
+.five {
+    background-color: rgb(201, 221, 90);
+}
+
+.five:hover {
+    animation-duration: 5000ms;
+    animation-name: five;
+}
+
+@keyframes five {
+    0% {
+        background-color: rgb(201, 221, 90);
+    }
+
+    25% {
+        background-color: rgb(77, 187, 165);
+    }
+
+    50% {
+        background-color: rgb(200, 50, 45);
+    }
+    
+    75% {
+        background-color: rgb(205, 115, 233);
+    }
+
+    100% {
+        background-color: rgb(233, 103, 144);
+    }
+}
+
+
+.six {
+    background-color: rgb(110, 236, 230);
+    animation-name: six;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.six:hover {
+    animation-play-state: paused;
+}
+
+@keyframes six {
+    0% {
+    background-color:  rgb(110, 236, 230);
+    }
+
+    50% {
+    background-color: rgb(243, 157, 228);
+    }
+
+    100% {
+    background-color: rgb(134, 87, 227);
+    }
+}
